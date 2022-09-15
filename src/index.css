@@ -1,13 +1,123 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* ********* Custom Properties ********* */
+:root {
+  --first-color: #009d71;
+  --second-color: #2b2929;
+  --white-color: #fff;
+  --black-color: #000000e6;
+  --text-color: #222;
+  --font: 'Poppins', 'serif';
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ********* Reset ********* */
+html {
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-size: 1rem;
+    scroll-behavior: smooth;
 }
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+body {
+  font-family: var(--font);
+  margin: 0px;
+  overflow-x: hidden;
+  background-color: var(--second-color);
+}
+button {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 20px;
+  background: none;
+  border: solid 1px white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+h4 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+h5 {
+  margin: 0;
+  font-size: 1rem;
+}
+p {
+  font-size: 1rem;
+}
+
+/* ********* Components ********* */
+.section-grid {
+    background-color: #2b2929;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+/* ********* Utilities ********* */
+.app {
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+.box-shadow-1 {
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0,0,0,0.25);
+}
+.box-shadow-2 {
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0,0,0,0.5);
+}
+.d-flex {
+  display: flex;
+}
+.d-none {
+  display: none;
+}
+
+@keyframes Slide_Up {
+  0%{
+      transform: translateY(250px);
+  }
+  100%{
+      transform: translateY(0);
+  }
+}
+
+@keyframes Slide_Down {
+  0%{
+      transform: translateY(-250px);
+  }
+  100%{
+      transform: translateY(0);
+  }
+}
+
+@keyframes Slide_Rigth {
+  0%{
+      transform: translateX(-250px);
+  }
+  100%{
+      transform: translateX(0);
+  }
+}
+
