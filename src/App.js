@@ -1,5 +1,5 @@
 import Header from './components/Header'
-//import Home from './components/Home'
+import Home from './components/Home'
 //import Acerca from './components/Acerca'
 //import Contacto from './components/Contacto'
 //import Footer from './components/Footer'
@@ -17,10 +17,10 @@ function App() {
   return (
     <div className="app">
       <Header />
-      {/*<Home />
-      <Acerca />
+      <Home />
+      {/*<Acerca />
       <Contacto />
-  <Footer />*/}
+      <Footer />*/}
     </div>
   );
 }
