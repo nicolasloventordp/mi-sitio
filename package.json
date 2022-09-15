@@ -1,8 +1,8 @@
 {
-  "name": "my-page",
+  "name": "mi-sitio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nicolasloventordp.github.io/my-page/",
+  "homepage": "https://nicolasloventordp.github.io/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
