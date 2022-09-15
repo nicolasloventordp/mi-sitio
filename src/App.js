@@ -1,6 +1,6 @@
 import Header from './components/Header'
 import Home from './components/Home'
-//import Acerca from './components/Acerca'
+import About from './components/About'
 //import Contacto from './components/Contacto'
 //import Footer from './components/Footer'
 import Aos from 'aos'
@@ -18,8 +18,8 @@ function App() {
     <div className="app">
       <Header />
       <Home />
-      {/*<Acerca />
-      <Contacto />
+      <About />
+      {/*<Contacto />
       <Footer />*/}
     </div>
   );
