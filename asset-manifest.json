@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.18b523cc.css",
-    "main.js": "/static/js/main.0d72799a.js",
-    "static/js/787.82944914.chunk.js": "/static/js/787.82944914.chunk.js",
-    "static/media/foto-cv.png": "/static/media/foto-cv.8e6c3a1c08f95562a76d.png",
-    "static/media/fondo.jpg": "/static/media/fondo.61b3a047c596971dfc5d.jpg",
-    "index.html": "/index.html",
-    "main.18b523cc.css.map": "/static/css/main.18b523cc.css.map",
-    "main.0d72799a.js.map": "/static/js/main.0d72799a.js.map",
-    "787.82944914.chunk.js.map": "/static/js/787.82944914.chunk.js.map"
+    "main.css": "/mi-sitio/static/css/main.1fb5d560.css",
+    "main.js": "/mi-sitio/static/js/main.cdb03266.js",
+    "static/js/787.82944914.chunk.js": "/mi-sitio/static/js/787.82944914.chunk.js",
+    "static/media/foto-cv.png": "/mi-sitio/static/media/foto-cv.8e6c3a1c08f95562a76d.png",
+    "static/media/fondo.jpg": "/mi-sitio/static/media/fondo.61b3a047c596971dfc5d.jpg",
+    "index.html": "/mi-sitio/index.html",
+    "main.1fb5d560.css.map": "/mi-sitio/static/css/main.1fb5d560.css.map",
+    "main.cdb03266.js.map": "/mi-sitio/static/js/main.cdb03266.js.map",
+    "787.82944914.chunk.js.map": "/mi-sitio/static/js/787.82944914.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.18b523cc.css",
-    "static/js/main.0d72799a.js"
+    "static/css/main.1fb5d560.css",
+    "static/js/main.cdb03266.js"
   ]
 }
