@@ -38,11 +38,11 @@
     position: relative;
     top: -26px;
     border: solid 3px var(--first-color);
-    background-color: #cac7c7;
+    background-color: var(--black-color);
     color: var(--first-color);
 }
 .about .about-box .btn-cv svg{
-    height: 30px;
+    height: 24px;
 }
 
 @media (max-width:1350px){

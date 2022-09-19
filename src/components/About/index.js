@@ -13,7 +13,7 @@ export default function About() {
                 <div className="about-box">
                     <AboutPhoto />
                     <AboutPresentation/>
-                    <Button className={"btn-cv"}  icon={faFileDownload} />
+                    <Button className={"btn-cv box-shadow-2"}  icon={faFileDownload} />
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 import Header from './components/Header'
 import Home from './components/Home'
 import About from './components/About'
-//import Contacto from './components/Contacto'
+import Contact from './components/Contact'
 //import Footer from './components/Footer'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -19,7 +19,7 @@ function App() {
       <Header />
       <Home />
       <About />
-      {/*<Contacto />
+      {/*<Contact />
       <Footer />*/}
     </div>
   );

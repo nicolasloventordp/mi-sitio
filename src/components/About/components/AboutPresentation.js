@@ -1,6 +1,6 @@
 export default function AboutPresentation() {
     return (
-        <div className="about-box__presentation" data-aos="fade-left">
+        <div className="about-box__presentation box-shadow-2" data-aos="fade-rigth">
              <p> 
                 Mi nombre es Nicolás Lo Vento. 
                 Soy egresado de la <b>Universidad Tecnológica Nacional</b> de la carrera <b>Técnico Universitario en Programación</b>. 
