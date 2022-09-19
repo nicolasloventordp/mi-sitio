@@ -13,7 +13,11 @@ export default function Header() {
         iconBars: document.querySelector('.header-box__tabs-mobile'),
         iconCircle: document.querySelector('.icon-circle-mobile')
     }
-    const itemsTabs = ['HOME','ACERCA','CONTACTO'];
+    const itemsTabs = [
+        {title: 'home', href: 'home'},
+        {title: 'acerca', href: 'about'},
+        {title: 'contacto', href: 'contact'}
+    ]
     const itemsSocialMedia = [
         {url: "https://www.instagram.com/nicolovento/", icon: <FaInstagram />},
         {url: "https://twitter.com/NicolasLovento", icon: <FaTwitter />},
