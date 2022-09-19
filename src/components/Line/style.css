@@ -1,0 +1,40 @@
+.route {
+    position: absolute;
+    background: var(--first-color);
+    height: 100%;
+    width: 4px;
+    left: 10px;
+    margin-top: 20px;
+}
+.route-title {
+    position: absolute;
+    left: 35px;
+    top: -25px;
+    color: var(--first-color);
+}
+.route-horizontal {
+    position: absolute;
+    width: 150px;
+    background: var(--first-color);
+    height: 4px;
+    left: 10px;
+}
+.route-circle {
+    width: 20px;
+    background: var(--first-color);
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    right: -5px;
+    top: -7px;
+}
+.route-vertical-circle {
+    width: 20px;
+    background: var(--first-color);
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    left: -7px;
+}

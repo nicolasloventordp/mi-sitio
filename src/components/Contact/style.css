@@ -1,0 +1,52 @@
+.contact{
+    margin-bottom: 10px;
+}
+.contact-box{
+    margin: auto;
+    width: 700px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.contact .contact-box .contact-box__card {
+    width: 360px;
+    height: 40px;
+    display: flex;
+    border: solid 3px var(--first-color);
+    border-radius: 10px;
+    background-color: #cac7c7;
+    padding-left: 50px;
+    margin-bottom: 50px;
+}
+.contact .contact-box .contact-box__card .contact-box__card-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    border-radius: 100%;
+    border: solid var(--first-color);
+}
+.contact .contact-box .contact-box__card svg{
+    font-size: 40px;
+    margin: 16px;
+    color: var(--first-color);
+}
+.contact .contact-box .contact-box__card .contact-box__card-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px;
+}
+.contact .contact-box .contact-box__card .contact-box__card-text span{
+    text-align: center;
+}
+.contact .roadmap-line {
+    bottom: 340px;
+}
+@media (max-width:1350px){
+    .acerca .contact-box {
+        max-width: 600px;
+    }
+}
