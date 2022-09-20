@@ -5,14 +5,14 @@ import HeaderSocialMedia from './components/HeaderSocialMedia'
 import IconBarsMobile from '../ui/IconBarsMobile'
 import IconCircleMobile from '../ui/IconCircleMobile'
 import { FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa"
-import "./style.css";
+import { useState } from 'react'
+import $ from 'jquery'
+import "./style.css"
 
 export default function Header() {
-    const dom = {
-        tabsMobile: document.querySelector('.header-box__tabs-mobile'),
-        iconBars: document.querySelector('.header-box__tabs-mobile'),
-        iconCircle: document.querySelector('.icon-circle-mobile')
-    }
+    
+    const [isTabsMobileOpen, setIsTabsMobileOpen] =  useState(false);
+        
     const itemsTabs = [
         {title: 'home', href: 'home'},
         {title: 'acerca', href: 'about'},
@@ -23,19 +23,29 @@ export default function Header() {
         {url: "https://twitter.com/NicolasLovento", icon: <FaTwitter />},
         {url: "https://www.linkedin.com/in/nicol%C3%A1s-daniel-lo-vento-3797a01a2/", icon: <FaLinkedin />}
     ]
-    const cerrarMenu = () => {
-        dom.tabsMobile.removeClass("open");
-        dom.iconBars.css("display","flex");
-        dom.iconCircle.css("display","none");
+    const showMenu = () => {
+        if(isTabsMobileOpen)
+            $('.header-box__tabs-mobile').addClass("open");
+        else
+            $('.header-box__tabs-mobile').removeClass("open");
     }
+
     return (
         <div className="header">
             <div className="header-box">
                 <HeaderLogo text={"Nicolás Lo Vento"}/>
                 <HeaderTabs itemsTabs={itemsTabs}/>
-                <IconBarsMobile />
-                <IconCircleMobile onClick={() => cerrarMenu()}/>
-                <HeaderTabsMobile itemsTabs={itemsTabs} cerrarMenu={cerrarMenu}/>
+                {!isTabsMobileOpen ? 
+                    <>
+                        {showMenu()}
+                        <IconBarsMobile setIsTabsMobileOpen={setIsTabsMobileOpen}/>
+                    </> : 
+                    <>
+                        {showMenu()}
+                        <IconCircleMobile setIsTabsMobileOpen={setIsTabsMobileOpen}/>
+                    </>
+                }
+                <HeaderTabsMobile itemsTabs={itemsTabs} setIsTabsMobileOpen={setIsTabsMobileOpen}/>
                 <HeaderSocialMedia itemsSocialMedia={itemsSocialMedia}/>
             </div>
         </div>
