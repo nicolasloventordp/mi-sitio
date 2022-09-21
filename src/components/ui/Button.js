@@ -1,19 +1,20 @@
+import Link from './Link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function Button({ className, text, icon, animation, href}) {
+export default function Button({ className, text, icon, href}) {
     return (
         <>
             {!href ? 
-                <button className={className+ " box-shadow-1"} >
+                <button className={className} >
                     <h5>{text}</h5>
                     <FontAwesomeIcon icon={icon}/>
                 </button> : 
-                <a href={href}  download="cv-nicolaslovento.pdf" >
-                    <button className={className+ " box-shadow-1"}>
+                <Link href={href}  nameDownload={"cv-nicolaslovento.pdf"} >
+                    <button className={className}>
                         <h5>{text}</h5>
                         <FontAwesomeIcon icon={icon}/>
                     </button>
-                </a>
+                </Link>
             }
         </>
             

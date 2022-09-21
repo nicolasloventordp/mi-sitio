@@ -1,5 +1,7 @@
-export default function HomeTitle({ title }) {
+export default function HomeTitle({ className, title, aos }) {
     return (
-        <h1 className="home-box__title" data-aos="fade-down">{title}</h1>
+        <h1 className={className} data-aos={aos}>
+            {title}
+        </h1>
     );
 }
