@@ -1,7 +1,14 @@
-export default function HeaderTabsMobile({itemsTabs, setIsTabsMobileOpen}) {
+import Link from '../../ui/Link'
+export default function HeaderTabsMobile({className, itemsTabs, setIsTabsMobileOpen}) {
     return (
-        <div className="header-box__tabs-mobile">
-            {itemsTabs?.map( (item, index) => <h5 key={index} onClick={() => setIsTabsMobileOpen(false)}><a href={"#"+item.href.toLowerCase()}>{item.title.toUpperCase()}</a></h5>)}
+        <div className={className}>
+            {itemsTabs?.map( (item, index) => 
+                <h5 key={index} onClick={() => setIsTabsMobileOpen(false)}>
+                    <Link href={"#"+item.href.toLowerCase()}>
+                        {item.title.toUpperCase()}
+                    </Link>
+                </h5>
+            )}
         </div>
     );
 }

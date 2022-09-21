@@ -1,9 +1,12 @@
-export default function HeaderSocialMedia({ itemsSocialMedia }) {
+import Link from '../../ui/Link'
+export default function HeaderSocialMedia({ className, itemsSocialMedia }) {
     return (
-        <div className="header-box__socialMedia">
+        <div className={className}>
             {itemsSocialMedia?.map( (item, index) => 
                 <div>
-                    <a href={item.url} target="_blank">{item.icon}</a>
+                    <Link href={item.url} target={"_blank"}>
+                        {item.icon}
+                    </Link>
                 </div>
             )}
         </div>

@@ -1,6 +1,6 @@
-export default function Link({ children, className, href, nameDownload, aos }) {
+export default function Link({ children, className, href, target, nameDownload, aos }) {
     return (
-        <a className={className} href={href} download={nameDownload} data-aos={aos} >
+        <a className={className} href={href} target={target} download={nameDownload} data-aos={aos} >
             {children}
         </a>
     );

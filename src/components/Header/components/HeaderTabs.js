@@ -1,7 +1,12 @@
-export default function HeaderTabs({ itemsTabs }) {
+import Link from '../../ui/Link'
+export default function HeaderTabs({ className, itemsTabs }) {
     return (
-        <div className="header-box__tabs">
-            {itemsTabs?.map( (item, index) => <h5  key={index}><a href={"#"+item.href.toLowerCase()}>{item.title.toUpperCase()}</a></h5>)}
+        <div className={className}>
+            {itemsTabs?.map( (item, index) => 
+                <h5  key={index}>
+                    <Link href={"#"+item.href.toLowerCase()}>{item.title.toUpperCase()}</Link>
+                </h5>
+            )}
         </div>
     );
 }

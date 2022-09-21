@@ -1,6 +1,6 @@
-export default function HeaderLogo({ text }) {
+export default function HeaderLogo({ className, text }) {
     return (
-        <div className="header-box__logo">
+        <div className={className}>
             <h5>{text}</h5>
         </div>
     );

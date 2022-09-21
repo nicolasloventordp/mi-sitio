@@ -4,39 +4,39 @@
     position: absolute;
     z-index: 1;
 }
-.header .header-box {
+.header__section {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.header .header-box .header-box__logo {
+.header__section-logo {
     display: flex;
     align-items: center;
     justify-content: start;
     padding-left: 20px;
     color: var(--white-color);
 }
-.header .header-box .header-box__tabs {
+.header__section-tabs {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 1rem;
 }
-.header .header-box .header-box__tabs h5{
+.header__section-tabs h5{
     cursor: pointer;
 }
-.header .header-box .header-box__tabs h5 a {
+.header__section-tabs h5 a {
     color: var(--white-color);
     transition: all 0.2s ease-out;
     text-decoration: none;
     padding: 6px 16px 6px 16px;
     border-radius: 20px;
 }
-.header .header-box .header-box__tabs h5 a:hover {
+.header__section-tabs h5 a:hover {
     color: var(--first-color);
 }
-.header .header-box .header-box__socialMedia {
+.header__section-media {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -44,29 +44,24 @@
     gap: 2rem;
     padding-right: 20px;
 }
-.header .header-box .header-box__socialMedia div a svg{
+.header__section-media div a svg{
     height: 1.2rem;
     color: var(--white-color);
     margin-top: 5px;
 }
-.header .header-box .header-box__socialMedia div a svg:hover{
+.header__section-media div a svg:hover{
     color: var(--first-color);
 }
-.icon-bars-mobile, .icon-circle-mobile{
+.header__section-icon {
     display: flex;
     align-items: center;
     justify-content: end;
     padding-right: 20px;
     font-size: 20px;
     color: var(--white-color);
-}
-.icon-bars-mobile svg {
     cursor: pointer;
 }
-.icon-circle-mobile svg {
-    cursor: pointer;
-}
-.header .header-box .header-box__tabs-mobile {
+.header__section-tabsmobile {
     position: fixed;
     overflow: hidden;
     right: 0px;
@@ -83,12 +78,12 @@
     gap: 10px;
     transition: all 1s ease-out;
 }
-.header .header-box .header-box__tabs-mobile.open{
+.header__section-tabsmobile.open{
     height: 150px;
 }
 
 @media (max-width:600px){
-    .header .header-box {
+    .header__section {
         grid-template-columns: 1fr 1fr;
     }
 }

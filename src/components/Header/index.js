@@ -1,11 +1,12 @@
+import Section from '../ui/Section'
 import HeaderLogo from './components/HeaderLogo'
 import HeaderTabs from './components/HeaderTabs'
+import IconBars from '../ui/IconBars'
+import IconCircle from '../ui/IconCircle'
 import HeaderTabsMobile from './components/HeaderTabsMobile'
 import HeaderSocialMedia from './components/HeaderSocialMedia'
-import IconBarsMobile from '../ui/IconBarsMobile'
-import IconCircleMobile from '../ui/IconCircleMobile'
 import { FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa"
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import $ from 'jquery'
 import "./style.css"
 
@@ -25,27 +26,27 @@ export default function Header({isMobile}) {
     ]
     const showMenu = () => {
         if(isTabsMobileOpen)
-            $('.header-box__tabs-mobile').addClass("open");
+            $('.header__section-tabsmobile').addClass("open");
         else
-            $('.header-box__tabs-mobile').removeClass("open");
+            $('.header__section-tabsmobile').removeClass("open");
     }
     const renderIconMobile = () => {
         showMenu();
         if(!isTabsMobileOpen){
-            return <IconBarsMobile setIsTabsMobileOpen={setIsTabsMobileOpen}/>;
+            return <IconBars className={"header__section-icon"} onClick={ () => setIsTabsMobileOpen(true)}/>;
         }else{
-            return <IconCircleMobile setIsTabsMobileOpen={setIsTabsMobileOpen}/>;
+            return <IconCircle className={"header__section-icon"} onClick={ () => setIsTabsMobileOpen(false)}/>;
         }
     }
     return (
         <div className="header">
-            <div className="header-box">
-                <HeaderLogo text={"Nicolás Lo Vento"}/>
-                {!isMobile &&  <HeaderTabs itemsTabs={itemsTabs}/>}
+            <Section className={"header__section"}>
+                <HeaderLogo className={"header__section-logo"} text={"Nicolás Lo Vento"}/>
+                {!isMobile &&  <HeaderTabs className={"header__section-tabs"} itemsTabs={itemsTabs}/>}
                 {isMobile && renderIconMobile()}
-                <HeaderTabsMobile itemsTabs={itemsTabs} setIsTabsMobileOpen={setIsTabsMobileOpen}/>
-                {!isMobile &&  <HeaderSocialMedia itemsSocialMedia={itemsSocialMedia}/>}
-            </div>
+                <HeaderTabsMobile className={"header__section-tabsmobile"} itemsTabs={itemsTabs} setIsTabsMobileOpen={setIsTabsMobileOpen}/>
+                {!isMobile &&  <HeaderSocialMedia className={"header__section-media"} itemsSocialMedia={itemsSocialMedia}/>}
+            </Section>
         </div>
     );
 }
