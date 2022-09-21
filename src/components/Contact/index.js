@@ -15,7 +15,7 @@ export default function Contact() {
                 <Roadmap name="Contacto" circleTop={false} circleBottom={true}/>
                 <div className="contact-box" >
                     {itemsSocialMedia?.map( (item,index) =>
-                        <ContactCard icon={item.icon} text={item.text} position={ ( index % 2 ) == 0 ? "right" : "left"} href={item.href}/>
+                        <ContactCard icon={item.icon} text={item.text} aos={"fade-right"} href={item.href}/>
                     )}
                 </div>
             </div>

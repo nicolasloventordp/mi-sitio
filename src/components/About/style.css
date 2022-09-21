@@ -11,9 +11,9 @@
     padding-top: 50px;
 }
 .about .about-box .about-box__photo{
-    max-width: 200px;
+    width: 160px;
     position: relative;
-    top: 20px;
+    top: 16px;
     z-index: 2;
 }
 .about .about-box .about-box__photo img{
@@ -36,7 +36,7 @@
     padding: 10px;
     border-radius: 100%;
     position: relative;
-    top: -26px;
+    top: -16px;
     border: solid 3px var(--first-color);
     background-color: var(--black-color);
     color: var(--first-color);
@@ -64,5 +64,10 @@
     }
     .section-grid {
         grid-template-columns: 1fr;
+    }
+}
+@media (max-width:420px){
+    .about .about-box .about-box__presentation p {
+        font-size: 14px;
     }
 }

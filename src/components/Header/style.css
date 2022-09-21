@@ -88,16 +88,7 @@
 }
 
 @media (max-width:600px){
-    .icon-bars-mobile {
-        display: flex;
-    }
     .header .header-box {
         grid-template-columns: 1fr 1fr;
-    }
-    .header .header-box .header-box__tabs {
-        display: none;
-    }
-    .header .header-box .header-box__socialMedia {
-        display: none;
     }
 }

@@ -5,7 +5,7 @@ export default function Home() {
     return (
         <div id="home" className="home">
             <div className="home-box">
-                <HomeTitle title={"Bienvenidos a mi sitio."}/>
+                <HomeTitle title={"Bienvenidos a mi sitioo."}/>
                 <div class="home-box__line" data-aos="fade-right"></div>
                 <a href="#contact" data-aos="fade-up">
                     <Button text={"Contáctame"} className="home-box__btn"/>

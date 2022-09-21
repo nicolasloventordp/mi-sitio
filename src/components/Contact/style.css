@@ -45,8 +45,39 @@
 .contact .roadmap-line {
     bottom: 340px;
 }
+
 @media (max-width:1350px){
-    .acerca .contact-box {
-        max-width: 600px;
+    .contact .contact-box {
+        width: 600px;
+    }
+}
+@media (max-width:620px){
+    .contact .contact-box {
+        width: 500px;
+    }
+}
+@media (max-width:520px){
+    .contact .contact-box {
+        width: 400px;
+    }
+    .contact .contact-box .contact-box__card svg{
+        font-size: 30px;
+    }
+}
+@media (max-width:420px){
+    .contact .contact-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact .contact-box .contact-box__card {
+        width: 300px;
+    }
+    .contact .contact-box .contact-box__card .contact-box__card-text {
+        margin-left: 25px;
+        font-size: 14px;
     }
 }

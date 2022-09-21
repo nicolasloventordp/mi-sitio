@@ -2,6 +2,7 @@ import Roadmap from "../Roadmap"
 import AboutPhoto from "./components/AboutPhoto"
 import AboutPresentation from "./components/AboutPresentation"
 import Button from '../ui/Button'
+import pdfCv from '../../assets/pdf/cv-nicolaslovento.pdf'
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons'
 import "./style.css"
 
@@ -13,7 +14,7 @@ export default function About() {
                 <div className="about-box">
                     <AboutPhoto />
                     <AboutPresentation/>
-                    <Button className={"btn-cv box-shadow-2"}  icon={faFileDownload} />
+                    <Button className={"btn-cv box-shadow-2"}  icon={faFileDownload} href={pdfCv} animation={"fade-left"}/>
                 </div>
             </div>
         </div>

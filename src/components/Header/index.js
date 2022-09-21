@@ -5,14 +5,14 @@ import HeaderSocialMedia from './components/HeaderSocialMedia'
 import IconBarsMobile from '../ui/IconBarsMobile'
 import IconCircleMobile from '../ui/IconCircleMobile'
 import { FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa"
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import $ from 'jquery'
 import "./style.css"
 
-export default function Header() {
+export default function Header({isMobile}) {
     
     const [isTabsMobileOpen, setIsTabsMobileOpen] =  useState(false);
-        
+    
     const itemsTabs = [
         {title: 'home', href: 'home'},
         {title: 'acerca', href: 'about'},
@@ -29,24 +29,22 @@ export default function Header() {
         else
             $('.header-box__tabs-mobile').removeClass("open");
     }
-
+    const renderIconMobile = () => {
+        showMenu();
+        if(!isTabsMobileOpen){
+            return <IconBarsMobile setIsTabsMobileOpen={setIsTabsMobileOpen}/>;
+        }else{
+            return <IconCircleMobile setIsTabsMobileOpen={setIsTabsMobileOpen}/>;
+        }
+    }
     return (
         <div className="header">
             <div className="header-box">
                 <HeaderLogo text={"Nicolás Lo Vento"}/>
-                <HeaderTabs itemsTabs={itemsTabs}/>
-                {!isTabsMobileOpen ? 
-                    <>
-                        {showMenu()}
-                        <IconBarsMobile setIsTabsMobileOpen={setIsTabsMobileOpen}/>
-                    </> : 
-                    <>
-                        {showMenu()}
-                        <IconCircleMobile setIsTabsMobileOpen={setIsTabsMobileOpen}/>
-                    </>
-                }
+                {!isMobile &&  <HeaderTabs itemsTabs={itemsTabs}/>}
+                {isMobile && renderIconMobile()}
                 <HeaderTabsMobile itemsTabs={itemsTabs} setIsTabsMobileOpen={setIsTabsMobileOpen}/>
-                <HeaderSocialMedia itemsSocialMedia={itemsSocialMedia}/>
+                {!isMobile &&  <HeaderSocialMedia itemsSocialMedia={itemsSocialMedia}/>}
             </div>
         </div>
     );

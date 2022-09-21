@@ -1,8 +1,8 @@
 import ContactCardIcon from "./ContactCardIcon"
 import ContactCardText from "./ContactCardText"
-export default function ContactCard({icon, text, href, position}) {
+export default function ContactCard({icon, text, href, aos}) {
     return (
-        <div className="contact-box__card box-shadow-2" style={position == "left" ? {float : "left"} : {float : "right"}} data-aos={position == "left" ? "fade-left" : "fade-right"}>
+        <div className="contact-box__card box-shadow-2" data-aos={aos}>
             <ContactCardIcon icon={icon} />
             <ContactCardText text={text} href={href} />
         </div>
