@@ -1,7 +1,7 @@
 import photoCv from '../../../assets/images/foto-cv.png';
-export default function AboutPhoto() {
+export default function AboutPhoto({ className, aos}) {
     return (
-        <div className="about-box__photo" data-aos="fade-down">
+        <div className={className} data-aos={aos}>
             <img src={photoCv} className="box-shadow-2"/>
         </div>
     );

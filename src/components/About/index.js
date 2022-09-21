@@ -1,4 +1,6 @@
+import Section from '../ui/Section'
 import Roadmap from "../Roadmap"
+import AboutCard from "./components/AboutCard"
 import AboutPhoto from "./components/AboutPhoto"
 import AboutPresentation from "./components/AboutPresentation"
 import Button from '../ui/Button'
@@ -9,14 +11,14 @@ import "./style.css"
 export default function About() {
     return (
         <div className="about" id="about">
-            <div className="section-grid">
+            <Section className={"about__section"}>
                 <Roadmap name="Acerca de mi" circleTop={true} circleBottom={false}/>
-                <div className="about-box">
-                    <AboutPhoto />
-                    <AboutPresentation/>
-                    <Button className={"btn-cv box-shadow-2"}  icon={faFileDownload} href={pdfCv} animation={"fade-left"}/>
-                </div>
-            </div>
+                <AboutCard className={"about__section-card"}>
+                    <AboutPhoto className={"about__section-card-photo"} aos={"fade-up"}/>
+                    <AboutPresentation className={"about__section-card-presentation"} aos={"fade-right"}/>
+                    <Button className={"about__section-card-button box-shadow-2"}  icon={faFileDownload} href={pdfCv} aos={"fade-right"}/>
+                </AboutCard>
+            </Section>
         </div>
     );
 } 

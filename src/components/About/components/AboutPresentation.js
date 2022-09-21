@@ -1,6 +1,6 @@
-export default function AboutPresentation() {
+export default function AboutPresentation({ className, aos }) {
     return (
-        <div className="about-box__presentation box-shadow-2" data-aos="fade-right">
+        <div className={className} data-aos={aos}>
              <p> 
                 Mi nombre es Nicolás Lo Vento. 
                 Soy egresado de la <b>Universidad Tecnológica Nacional</b> de la carrera <b>Técnico Universitario en Programación</b>. 
