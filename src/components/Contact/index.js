@@ -1,4 +1,7 @@
+import Section from "../ui/Section"
 import ContactCard from "./components/ContactCard"
+import ContactCardIcon from "./components/ContactCardIcon"
+import ContactCardText from "./components/ContactCardText"
 import Roadmap from "../Roadmap"
 import { FaRegEnvelope, FaPhoneAlt, FaMapMarkedAlt, FaLinkedinIn } from "react-icons/fa";
 import "./style.css";
@@ -11,14 +14,17 @@ export default function Contact() {
     ]
     return (
         <div id="contact" className="contact">
-            <div className="section-grid">
+            <Section className={"contact__section"}>
                 <Roadmap name="Contacto" circleTop={false} circleBottom={true}/>
-                <div className="contact-box" >
+                <div className="contact__section-box" >
                     {itemsSocialMedia?.map( (item,index) =>
-                        <ContactCard icon={item.icon} text={item.text} aos={"fade-right"} href={item.href}/>
+                        <ContactCard className={"contact__section-box-card box-shadow-2"} aos={"fade-right"} >
+                            <ContactCardIcon className={"contact__section-box-card-icon"} icon={item.icon} />
+                            <ContactCardText className={"contact__section-box-card-text"} text={item.text} href={item.href} />
+                        </ContactCard>
                     )}
                 </div>
-            </div>
+            </Section>
         </div>
     );
 }

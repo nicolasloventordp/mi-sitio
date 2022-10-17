@@ -1,5 +1,7 @@
-export default function ContactCardIcon({icon}) {
+export default function ContactCardIcon({ className, icon}) {
     return (
-        <div class="contact-box__card-icon">{icon}</div>
+        <div class={className}>
+            {icon}
+        </div>
     );
 }
