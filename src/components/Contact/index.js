@@ -18,7 +18,7 @@ export default function Contact() {
                 <Roadmap name="Contacto" circleTop={false} circleBottom={true}/>
                 <div className="contact__section-box" >
                     {itemsSocialMedia?.map( (item,index) =>
-                        <ContactCard className={"contact__section-box-card box-shadow-2"} aos={"fade-right"} >
+                        <ContactCard className={"contact__section-box-card box-shadow-2"} aos={"fade-right"} position={ index % 2 == 0 ? "left" : "right"}>
                             <ContactCardIcon className={"contact__section-box-card-icon"} icon={item.icon} />
                             <ContactCardText className={"contact__section-box-card-text"} text={item.text} href={item.href} />
                         </ContactCard>
