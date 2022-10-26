@@ -3,6 +3,7 @@ import Roadmap from "../Roadmap"
 import AboutCard from "./components/AboutCard"
 import AboutPhoto from "./components/AboutPhoto"
 import AboutPresentation from "./components/AboutPresentation"
+import Conocimientos from '../Conocimientos'
 import Button from '../ui/Button'
 import pdfCv from '../../assets/pdf/cv-nicolaslovento.pdf'
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons'
@@ -18,6 +19,7 @@ export default function About() {
                     <AboutPresentation className={"about__section-card-presentation"} aos={"fade-right"}/>
                     <Button className={"about__section-card-button box-shadow-2"}  icon={faFileDownload} href={pdfCv} aos={"fade-right"}/>
                 </AboutCard>
+                <Conocimientos />
             </Section>
         </div>
     );

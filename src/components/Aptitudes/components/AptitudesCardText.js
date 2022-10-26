@@ -1,4 +1,4 @@
-export default function ContactCardText({ className, text, href}) {
+export default function AptitudesCardText({ className, text, href}) {
     return (
         <div class={className}>
             {text ? <span>{text}</span> : ""}

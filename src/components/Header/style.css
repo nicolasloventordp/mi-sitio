@@ -4,11 +4,13 @@
     position: absolute;
     z-index: 1;
 }
+
 .header__section {
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
 .header__section-logo {
     display: flex;
     align-items: center;
@@ -16,16 +18,18 @@
     padding-left: 20px;
     color: var(--white-color);
 }
+
 .header__section-tabs {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
 }
-.header__section-tabs h5{
+
+.header__section-tabs h5 {
     cursor: pointer;
 }
+
 .header__section-tabs h5 a {
     color: var(--white-color);
     transition: all 0.2s ease-out;
@@ -33,9 +37,11 @@
     padding: 6px 16px 6px 16px;
     border-radius: 20px;
 }
+
 .header__section-tabs h5 a:hover {
     color: var(--first-color);
 }
+
 .header__section-media {
     display: flex;
     flex-direction: row;
@@ -44,23 +50,17 @@
     gap: 2rem;
     padding-right: 20px;
 }
-.header__section-media div a svg{
+
+.header__section-media div a svg {
     height: 1.2rem;
     color: var(--white-color);
     margin-top: 5px;
 }
-.header__section-media div a svg:hover{
+
+.header__section-media div a svg:hover {
     color: var(--first-color);
 }
-.header__section-icon {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    padding-right: 20px;
-    font-size: 20px;
-    color: var(--white-color);
-    cursor: pointer;
-}
+
 .header__section-tabsmobile {
     position: fixed;
     overflow: hidden;
@@ -78,12 +78,35 @@
     gap: 10px;
     transition: all 1s ease-out;
 }
-.header__section-tabsmobile.open{
+
+.header__section-tabsmobile.open {
     height: 150px;
 }
 
-@media (max-width:600px){
+.header__section-icon {
+    justify-content: end;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+
+@media (max-width:576px) {
+    .header__section-tabs {
+        display: none;
+    }
+
+    .icon-bars {
+        display: flex;
+    }
+}
+@media (max-width:700px) {
     .header__section {
         grid-template-columns: 1fr 1fr;
     }
+
+    .header__section-media {
+        display: none;
+    }
 }
+

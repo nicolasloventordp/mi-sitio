@@ -4,7 +4,7 @@
 .about__section{
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 4fr 1fr;
 }
 .about__section-card {
     max-width: 980px;
@@ -48,6 +48,9 @@
 }
 .about__section-card-button svg{
     height: 24px;
+}
+.about .roadmap-line {
+    bottom: 400px;
 }
 
 @media (max-width:1350px){

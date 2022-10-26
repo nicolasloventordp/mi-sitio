@@ -1,8 +1,7 @@
 import Header from './components/Header'
 import Home from './components/Home'
 import About from './components/About'
-import Conocimientos from './components/Conocimientos'
-import Contact from './components/Contact'
+import Aptitudes from './components/Aptitudes'
 import Footer from './components/Footer'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -32,8 +31,7 @@ function App() {
       <Header isMobile={isMobile}/>
       <Home />
       <About />
-      <Conocimientos />
-      <Contact />
+      <Aptitudes />
       <Footer />
     </div>
   );

@@ -1,21 +1,20 @@
-.contact {
+.aptitudes {
     margin-bottom: 60px;
 }
 
-.contact__section {
-    width: 100%;
+.aptitudes__section {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 4fr 1fr;
 }
 
-.contact__section-box {
+.aptitudes__section-box {
     margin: auto;
     padding-top: 150px;
     padding-bottom: 100px;
     width: 500px;
 }
 
-.contact__section-box-card {
+.aptitudes__section-box-card {
     width: 360px;
     height: 40px;
     display: flex;
@@ -26,7 +25,7 @@
     margin-bottom: 50px;
 }
 
-.contact__section-box-card-icon {
+.aptitudes__section-box-card-icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,31 +37,31 @@
     border: solid var(--first-color);
 }
 
-.contact__section-box-card svg {
+.aptitudes__section-box-card svg {
     font-size: 40px;
     margin: 16px;
     color: var(--first-color);
 }
 
-.contact__section-box-card-text {
+.aptitudes__section-box-card-text {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 45px;
 }
 
-.contact__section-box-card-text span {
+.aptitudes__section-box-card-text span {
     text-align: center;
 }
 
-.contact .roadmap-line {
+.aptitudes .roadmap-line {
     bottom: 340px;
 }
 
 
 
 @media (max-width:420px) {
-    .contact__section-box {
+    .aptitudes__section-box {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -71,24 +70,24 @@
         align-items: center;
     }
 
-    .contact__section-box-card {
+    .aptitudes__section-box-card {
         width: 300px;
     }
 
-    .contact__section-box-card-text {
+    .aptitudes__section-box-card-text {
         margin-left: 25px;
         font-size: 14px;
     }
 }
 
 @media (max-width:520px) {
-    .contact__section-box-card svg {
+    .aptitudes__section-box-card svg {
         font-size: 30px;
     }
 }
 
 @media (max-width: 850px) {
-    .contact__section {
+    .aptitudes__section {
         grid-template-columns: 1fr;
     }
 }

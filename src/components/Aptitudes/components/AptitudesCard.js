@@ -1,4 +1,4 @@
-export default function ContactCard({ children, className, aos, position }) {
+export default function AptitudesCard({ children, className, aos, position }) {
     return (
 
         <div className={className} data-aos={aos} style={{ float: position }}>
