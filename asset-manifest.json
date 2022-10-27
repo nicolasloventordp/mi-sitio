@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/mi-sitio/static/css/main.ce387804.css",
-    "main.js": "/mi-sitio/static/js/main.6b244ac3.js",
+    "main.css": "/mi-sitio/static/css/main.72573339.css",
+    "main.js": "/mi-sitio/static/js/main.9faa7624.js",
     "static/js/787.82944914.chunk.js": "/mi-sitio/static/js/787.82944914.chunk.js",
     "static/media/fondo-web.png": "/mi-sitio/static/media/fondo-web.835ecd2b19e3f53d2c49.png",
     "static/media/foto-cv.png": "/mi-sitio/static/media/foto-cv.8e6c3a1c08f95562a76d.png",
     "static/media/fondo.jpg": "/mi-sitio/static/media/fondo.61b3a047c596971dfc5d.jpg",
     "static/media/cv-nicolaslovento.pdf": "/mi-sitio/static/media/cv-nicolaslovento.e6492fe256ebd308f7d3.pdf",
     "index.html": "/mi-sitio/index.html",
-    "main.ce387804.css.map": "/mi-sitio/static/css/main.ce387804.css.map",
-    "main.6b244ac3.js.map": "/mi-sitio/static/js/main.6b244ac3.js.map",
+    "main.72573339.css.map": "/mi-sitio/static/css/main.72573339.css.map",
+    "main.9faa7624.js.map": "/mi-sitio/static/js/main.9faa7624.js.map",
     "787.82944914.chunk.js.map": "/mi-sitio/static/js/787.82944914.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce387804.css",
-    "static/js/main.6b244ac3.js"
+    "static/css/main.72573339.css",
+    "static/js/main.9faa7624.js"
   ]
 }
