@@ -30,9 +30,12 @@ function App() {
     <div className="app">
       <Header isMobile={isMobile}/>
       <Home />
-      <About />
-      <Aptitudes />
-      <Footer />
+      <div className="content">
+        <About />
+        <Aptitudes />
+      </div>
+      
+
     </div>
   );
 }
