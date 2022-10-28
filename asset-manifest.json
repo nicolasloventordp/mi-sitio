@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mi-sitio/static/css/main.cf2fdb3f.css",
+    "main.css": "/mi-sitio/static/css/main.4c23db4d.css",
     "main.js": "/mi-sitio/static/js/main.19607e0b.js",
     "static/js/787.82944914.chunk.js": "/mi-sitio/static/js/787.82944914.chunk.js",
     "static/media/fondo-web.png": "/mi-sitio/static/media/fondo-web.835ecd2b19e3f53d2c49.png",
@@ -8,12 +8,12 @@
     "static/media/fondo.jpg": "/mi-sitio/static/media/fondo.61b3a047c596971dfc5d.jpg",
     "static/media/cv-nicolaslovento.pdf": "/mi-sitio/static/media/cv-nicolaslovento.e6492fe256ebd308f7d3.pdf",
     "index.html": "/mi-sitio/index.html",
-    "main.cf2fdb3f.css.map": "/mi-sitio/static/css/main.cf2fdb3f.css.map",
+    "main.4c23db4d.css.map": "/mi-sitio/static/css/main.4c23db4d.css.map",
     "main.19607e0b.js.map": "/mi-sitio/static/js/main.19607e0b.js.map",
     "787.82944914.chunk.js.map": "/mi-sitio/static/js/787.82944914.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf2fdb3f.css",
+    "static/css/main.4c23db4d.css",
     "static/js/main.19607e0b.js"
   ]
 }
