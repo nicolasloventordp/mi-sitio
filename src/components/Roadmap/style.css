@@ -1,14 +1,11 @@
 .roadmap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-left: 40px;
 }
 .roadmap__box {
     position: relative;
     background: var(--first-color);
     height: 100%;
     width: 4px;
-    margin-left: 10px;
 }
 .roadmap-title {
     position: absolute;

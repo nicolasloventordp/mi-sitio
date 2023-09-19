@@ -1,12 +1,10 @@
 .aptitudes {
     margin-bottom: 60px;
 }
-
 .aptitudes__section {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 6fr;
 }
-
 .aptitudes__section-box {
     margin: auto;
     padding-top: 150px;

@@ -2,7 +2,6 @@ import Section from "../ui/Section"
 import AptitudesCard from "./components/AptitudesCard"
 import AptitudesCardIcon from "./components/AptitudesCardIcon"
 import AptitudesCardText from "./components/AptitudesCardText"
-import Redes from "../Redes"
 import Roadmap from "../Roadmap"
 import { FaUserCheck, FaUsers, FaLaptopHouse, FaUserGraduate } from "react-icons/fa";
 import "./style.css";
@@ -25,7 +24,6 @@ export default function Aptitudes() {
                         </AptitudesCard>
                     )}
                 </div>
-                <Redes />
             </Section>
         </div>
     );
