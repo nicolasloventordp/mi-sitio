@@ -17,7 +17,7 @@ export default function Conocimientos() {
     return (
         <div id="conocimientos" className="conocimientos">
             <Section className={"conocimientos__section"}>
-                <span className="conocimientos__section-title">Conocimientos</span>
+                <Roadmap name="Conocimientos" circleTop={false} circleBottom={false}/>
                 <div className="conocimientos__section-box" >
                     {itemsConocimientos?.map( (item,index) =>
                         <ConocimientosCard className={"conocimientos__section-box-card"} aos={"fade-right"} >

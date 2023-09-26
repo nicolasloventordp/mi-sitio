@@ -13,14 +13,15 @@ export default function Header({isMobile}) {
     
     const itemsTabs = [
         {title: 'home', href: 'home'},
-        {title: 'acerca de', href: 'about'},
+        {title: 'acerca de mi', href: 'about'},
+        {title: 'conocimientos', href: 'conocimientos'},
         {title: 'aptitudes', href: 'aptitudes'}
     ]
     const itemsTabsMobile = [
         {title: 'home', href: 'home'},
-        {title: 'acerca de', href: 'about'},
-        {title: 'aptitudes', href: 'aptitudes'},
+        {title: 'acerca de mi', href: 'about'},
         {title: 'conocimientos', href: 'conocimientos'},
+        {title: 'aptitudes', href: 'aptitudes'},
         {title: 'redes', href: 'redes'}
     ]
     const itemsRedes = [

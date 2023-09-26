@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import Home from './components/Home'
 import About from './components/About'
+import Conocimientos from './components/Conocimientos'
 import Aptitudes from './components/Aptitudes'
 import Footer from './components/Footer'
 import Aos from 'aos'
@@ -32,6 +33,7 @@ function App() {
       <Home />
       <div className="content">
         <About />
+        <Conocimientos />    
         <Aptitudes />
       </div>
       
